@@ -4,19 +4,20 @@
 
 using namespace std;
 
-int main() {
+	}
+	void printVec(const vector<int>& vec) {
+		for (auto i : vec) {
+			cout << i << " ";
+		}
+		cout << endl;
+	}
+	int main() {
 	vector<int> vec;
 	for (int i = 0; i < 100; i++) {
 		vec.push_back(rand() % 100);
 	}
-
-	for (auto i : vec) {
-		cout << i << " ";
-	}
-	cout << endl;
+	printVec(vec);
 	sort(vec.begin(), vec.end());
-
-	for (auto i : vec) {
-		cout << i << " ";
+	printVec(vec);	
 	}
 }
