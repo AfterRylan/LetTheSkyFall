@@ -1,22 +1,19 @@
-﻿#include <iostream>
-
+﻿#include <algorithm>
+#include <vector>
+#include <iostream>
+using namespace std;
 
 int main() {
 
-    setlocale(LC_ALL, "RUS");
     int a;
-
-    std::cout << "Введите а:";
-    std::cin >> a;
-    for (int i(0); i < a; i++) {
-        for (int j(a); j != i; j--) {
-            std::cout << " ";
-        }
-        for (int r(0); r != i; r++) {
-            std::cout << "**";
-        }
-        std::cout << std::endl;
-    }
-    system("pause");
-    return 0;
+    int r;
+    cin >> a;
+    cin >> r;
+    vector<int> v(a);
+    for (int i = 0; i < a; i++)
+        cin >> v[i];
+    for (int i = 0; i < a; i++)
+        cout << v[i] * r << " ";
 }
+
+//TEST(TestCaseName, TestInt)
