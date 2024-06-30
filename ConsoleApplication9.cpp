@@ -5,15 +5,11 @@ using namespace std;
 
 int main() {
 
-    int a;
-    int r;
-    cin >> a;
-    cin >> r;
-    vector<int> v(a);
-    for (int i = 0; i < a; i++)
-        cin >> v[i];
-    for (int i = 0; i < a; i++)
-        cout << v[i] * r << " ";
+    int n;
+    cin >> n;
+    std::vector<int> AddVec(std::vector<int> & vec, int n); {
+        for (int i = 0; i < vec.size; i++)
+            vec[i] += n;
+    }
+    return vec;
 }
-
-//TEST(TestCaseName, TestInt)
